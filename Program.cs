@@ -52,14 +52,11 @@ namespace Lab5._2RockPaperScissors
             Console.WriteLine();
             string UserChoice = Console.ReadLine().ToLower();
             
-            if (UserChoice == "rock" || UserChoice == "paper"  || UserChoice == "scissors")
-            {
+            
 
                 switch (UserChoice )
                 {
-                    default:
-                        Console.WriteLine("Unable to translate your your uncommon language. Here's a rock.");
-                        break;
+                    
 
                     case "rock":
                         UserInput = 0;
@@ -73,10 +70,14 @@ namespace Lab5._2RockPaperScissors
                         UserInput = 2;
                         break;
 
-                    
-                          
+                    default:
+                        Console.WriteLine("Unable to translate your your uncommon language. Here's a rock.");
+                        break;
+
+
+
                 }
-            }
+            
             var UserThrow = (Throw)UserInput;
 
             return UserThrow;
